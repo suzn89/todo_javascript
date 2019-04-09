@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>To Do List - Javascript</title>
+  <script>
+    function addItem() {
+      var newItem = document.createElement("div");  //div(element) 를 새로 만든다
+      newItem.innerHTML = document.getElementById("box").value; //newItem 안에 box의 value값을 넣음
+      document.getElementById("list").appendChild(newItem); // list에 newItem을 append 시킴
+    }
+  </script>
+</head>
+<body>
+  <input type="text" name="" id="box" value="할일추가">
+  <input type="button" value="add" onclick="addItem()">
+
+  <div id="list">
+
+  </div>
+
+</body>
+</html>
